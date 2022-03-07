@@ -1,0 +1,9 @@
+{
+  "items": [],
+  "baseTheme": "generic.greenmist",
+  "outputColorScheme": "additional",
+  "assetsBasePath": "../../../node_modules/devextreme/dist/css/",
+  "version": "21.2.5",
+  "widgets": [],
+  "removeExternalResources": false
+}

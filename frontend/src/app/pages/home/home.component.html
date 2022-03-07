@@ -1,0 +1,39 @@
+<div class="messaging">
+    <div class="message-tray">
+        <div *ngFor="let message of messages">
+            <div class="container mt-2 receivedMessage" *ngIf="message.messagedById == 1">
+                <!-- <dx-text-area [height]="90" [(value)]="receivedMessage" [readOnly]="true">
+  </dx-text-area> -->
+                {{ message.message }}
+                <div class="time-date">{{ message.messagedAt }}</div>
+            </div>
+
+            <div class="container mt-2 myMessage" *ngIf="message.messagedById == 2">
+                {{ message.message }}
+                <div class="time-date">{{ message.messagedAt }}</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container pt-2 receivedMessage" *ngIf="receivedMessage">
+    {{ receivedMessage }}
+    <div class="time-date">{{time}}</div>
+  </div>
+  
+  <div class="container pt-2 myMessage" *ngIf="receivedMessage">
+    {{ receivedMessage }}
+    <div class="time-date">{{time}}</div>
+  </div> -->
+
+    <div class="float-bottom">
+        <div class="send-message">
+            <dx-text-area [autoResizeEnabled]="true" [minHeight]="50" [maxHeight]="200" [(value)]="sendMessage">
+            </dx-text-area>
+        </div>
+
+        <div class="send-button">
+            <dx-button stylingMode="default" type="default" icon="icon ion-md-send" hint="send" (onClick)="click($event)">
+            </dx-button>
+        </div>
+    </div>
+</div>

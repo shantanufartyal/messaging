@@ -1,0 +1,164 @@
+:host {
+  ::ng-deep .dx-button-has-icon .dx-button-content {
+    padding: 13px !important;
+  }
+
+  ::ng-deep
+    dx-button.dx-widget.dx-button.dx-button-mode-contained.dx-button-default.dx-button-has-icon {
+    border-radius: 50%;
+  }
+}
+
+.dx-button-has-icon .dx-button-content {
+  padding: 103px !important;
+}
+
+.logos-container {
+  margin: 20px 0 40px 0;
+  text-align: center;
+  svg {
+    display: inline-block;
+  }
+}
+
+.devextreme-logo {
+  width: 200px;
+  height: 34px;
+  margin-bottom: 13px;
+}
+.messaging {
+  background: url(../../../assets/images/background.jpg);
+  height: calc(100vh - 60px);
+  position: relative;
+  background-attachment: fixed;
+  // overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+::ng-deep i.dx-icon.icon.ion-md-send {
+  font-size: 30px;
+  position: relative;
+  top: -7px;
+}
+
+.angular-logo {
+  width: 220px;
+  height: 62px;
+}
+
+.plus {
+  margin: 15px 10px;
+  width: 22px;
+  height: 22px;
+}
+
+:host-context(.screen-x-small) .logos-container {
+  svg {
+    width: 100%;
+    display: block;
+    &.plus {
+      margin: 0;
+    }
+  }
+}
+
+.float-bottom {
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  width: 100vw !important;
+  bottom: 0;
+  margin-bottom: 20px;
+  width: calc(100vw - 250px);
+  margin-right: 20px;
+}
+
+.receivedMessage {
+  color: #191919;
+  border-radius: 12px;
+  font-size: medium;
+  width: 49%;
+  position: relative;
+  padding: 20px;
+  background-color: white;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  margin: 10px;
+  border: 1px solid #dee2e6;
+  // -webkit-box-shadow: 4px 6px 10px -1px rgba(0, 0, 0, 0.6);
+  // -moz-box-shadow: 4px 6px 10px -1px rgba(0, 0, 0, 0.6);
+  // box-shadow: 4px 6px 10px -1px rgba(0, 0, 0, 0.6);
+}
+
+.receivedMessage::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  top: 9px;
+  left: -6px;
+  transform: rotate(42deg);
+  border: 1px solid #dee2e6;
+  border-right: white;
+  border-top: white;
+}
+
+.send-message {
+  flex: 90%;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.myMessage {
+  float: right;
+  color: #191919;
+  border-radius: 12px;
+  font-size: medium;
+  width: 49%;
+  justify-self: flex-end;
+  position: relative;
+  right: 0;
+  padding: 20px;
+  background-color: white;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  margin: 10px;
+  border: 1px solid #dee2e6;
+  // box-shadow: -7px 4px 10px -1px rgba(0, 0, 0, 0.6);
+  // -webkit-box-shadow: -7px 4px 10px -1px rgba(0, 0, 0, 0.6);
+  // -moz-box-shadow: -7px 4px 10px -1px rgba(0, 0, 0, 0.6);
+}
+
+.time-date {
+  float: right;
+  position: relative;
+  color: gray;
+  font-size: small;
+  top: 17px;
+}
+
+.myMessage::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  top: 9px;
+  right: -6px;
+  transform: rotate(42deg);
+  border: 1px solid #dee2e6;
+  border-left: white;
+  border-bottom: white;
+}
+
+.message-tray{
+  display: flex;
+  flex-direction: column;
+}
+
+.send-button {
+  margin-right: 10px;
+  position: relative;
+  // top: 8px;
+}

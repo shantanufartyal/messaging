@@ -3,6 +3,8 @@
 This project was generated with MEAN(Mongo, Express, Angular and Nodejs) stack.
 With Angular I'm Devextreme in the front-end.
 
+This is a work in progress.
+
 ## Overview
 
 This is a messaging web app created using MEAN stack.
